@@ -1,0 +1,345 @@
+# 调度侧点表，来源：104.*(3).csv。
+# CSV 的“属性1”直接映射为 IEC 104 IOA。
+# YC/YX 用于预期总召快照，YM 用于预期电度快照，YK/YT 用于命令表单提示。
+
+# YX：18 个单点遥信。
+[[points]]
+name = "逆变器1 通讯状态 (IOA 1)"
+ioa = 1
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 通讯状态 (IOA 2)"
+ioa = 2
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 通讯状态 (IOA 3)"
+ioa = 3
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yx1 (IOA 4)"
+ioa = 4
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yx2 (IOA 5)"
+ioa = 5
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yx3 (IOA 6)"
+ioa = 6
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yx4 (IOA 7)"
+ioa = 7
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yx5 (IOA 8)"
+ioa = 8
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yx1 (IOA 9)"
+ioa = 9
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yx2 (IOA 10)"
+ioa = 10
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yx3 (IOA 11)"
+ioa = 11
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yx4 (IOA 12)"
+ioa = 12
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yx5 (IOA 13)"
+ioa = 13
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yx1 (IOA 14)"
+ioa = 14
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yx2 (IOA 15)"
+ioa = 15
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yx3 (IOA 16)"
+ioa = 16
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yx4 (IOA 17)"
+ioa = 17
+type = "single_point"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yx5 (IOA 18)"
+ioa = 18
+type = "single_point"
+purpose = "expected_general"
+
+# YC：30 个短浮点遥测。
+[[points]]
+name = "逆变器1 yc1 (IOA 16385)"
+ioa = 16385
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yc2 (IOA 16386)"
+ioa = 16386
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yc3 (IOA 16387)"
+ioa = 16387
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yc4 (IOA 16388)"
+ioa = 16388
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yc5 (IOA 16389)"
+ioa = 16389
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yc6 (IOA 16390)"
+ioa = 16390
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yc7 (IOA 16391)"
+ioa = 16391
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yc8 (IOA 16392)"
+ioa = 16392
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yc9 (IOA 16393)"
+ioa = 16393
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器1 yc10 (IOA 16394)"
+ioa = 16394
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yc1 (IOA 16395)"
+ioa = 16395
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yc2 (IOA 16396)"
+ioa = 16396
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yc3 (IOA 16397)"
+ioa = 16397
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yc4 (IOA 16398)"
+ioa = 16398
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yc5 (IOA 16399)"
+ioa = 16399
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yc6 (IOA 16400)"
+ioa = 16400
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yc7 (IOA 16401)"
+ioa = 16401
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yc8 (IOA 16402)"
+ioa = 16402
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yc9 (IOA 16403)"
+ioa = 16403
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器2 yc10 (IOA 16404)"
+ioa = 16404
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yc1 (IOA 16405)"
+ioa = 16405
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yc2 (IOA 16406)"
+ioa = 16406
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yc3 (IOA 16407)"
+ioa = 16407
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yc4 (IOA 16408)"
+ioa = 16408
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yc5 (IOA 16409)"
+ioa = 16409
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yc6 (IOA 16410)"
+ioa = 16410
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yc7 (IOA 16411)"
+ioa = 16411
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yc8 (IOA 16412)"
+ioa = 16412
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yc9 (IOA 16413)"
+ioa = 16413
+type = "float"
+purpose = "expected_general"
+
+[[points]]
+name = "逆变器3 yc10 (IOA 16414)"
+ioa = 16414
+type = "float"
+purpose = "expected_general"
+
+# YM：0 个电度点。
+# 源文件只有表头，本点表不生成该类点。
+
+# YK：3 个遥控命令。
+[[points]]
+name = "逆变器1 yk1 (IOA 24577)"
+ioa = 24577
+type = "single_control"
+purpose = "command"
+min = 0
+max = 1
+default_value = 1
+
+[[points]]
+name = "逆变器2 yk1 (IOA 24578)"
+ioa = 24578
+type = "single_control"
+purpose = "command"
+min = 0
+max = 1
+default_value = 1
+
+[[points]]
+name = "逆变器3 yk1 (IOA 24579)"
+ioa = 24579
+type = "single_control"
+purpose = "command"
+min = 0
+max = 1
+default_value = 1
+
+# YT：3 个短浮点遥调命令。
+[[points]]
+name = "逆变器1 yt1 (IOA 25089)"
+ioa = 25089
+type = "float_setpoint"
+purpose = "command"
+default_value = 0
+[[points]]
+name = "逆变器2 yt1 (IOA 25090)"
+ioa = 25090
+type = "float_setpoint"
+purpose = "command"
+default_value = 0
+
+[[points]]
+name = "逆变器3 yt1 (IOA 25091)"
+ioa = 25091
+type = "float_setpoint"
+purpose = "command"
+default_value = 0

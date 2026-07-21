@@ -1,0 +1,14 @@
+[package]
+name = "agcavc104test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4.45", default-features = false, features = ["clock"] }
+crossterm = "0.29.0"
+fastrand = "2.4.1"
+iec104 = "0.4.0"
+ratatui = "0.30.2"
+serde = { version = "1.0.228", features = ["derive"] }
+tokio = { version = "1.47.0", features = ["io-util", "macros", "net", "rt-multi-thread", "signal", "sync", "time"] }
+toml = "1.1.2"

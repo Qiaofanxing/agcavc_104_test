@@ -1,0 +1,38 @@
+# IEC 60870-5-104 双端人工测试台主配置。
+# 程序不接受命令行参数，直接运行 RUSTC_WRAPPER= cargo run 即可。
+
+[protocol]
+t0_ms = 10000
+t1_ms = 15000
+t2_ms = 10000
+t3_ms = 20000
+k = 12
+w = 8
+max_pending_outgoing_asdu = 1024
+originator_address = 0
+
+# 采集侧：本工具作为 IEC104 子站，等待 AGCAVC 采集主站连接。
+[collect]
+bind_host = "127.0.0.1"
+bind_port = 2405
+common_address = 1
+# “延迟成功”一次性策略未指定点位延迟时使用该值。
+fault_delay_ms = 2000
+
+# 调度侧：本工具作为 IEC104 主站，主动连接 AGCAVC 调度子站。
+# TCP 建立后固定保持 CONNECTED_STOPPED，必须在第五页手工 STARTDT。
+[dispatch]
+target_host = "127.0.0.1"
+target_port = 2404
+common_address = 1
+reconnect_ms = 3000
+
+[ui]
+tick_ms = 100
+log_capacity = 2000
+command_capacity = 256
+event_capacity = 4096
+
+[points]
+collect = "config/collect-points.toml"
+dispatch = "config/dispatch-points.toml"
