@@ -11,13 +11,12 @@
 
 ## 1. 使用前准备
 
-### 1.1 使用 Windows 发布包
+### 1.1 使用 GitHub Release 发布包
 
-Windows x86_64 发布包位于：
+发布包通过 GitHub Release 提供：
 
-```text
-dist/agcavc104test-0.1.0-windows-x86_64.zip
-```
+- [下载 agcavc104test 0.1.0 Windows x86_64 发布包](https://github.com/Qiaofanxing/agcavc_104_test/releases/download/v0.1.0/agcavc104test-0.1.0-windows-x86_64.zip)
+- [下载 agcavc104test 0.1.0 macOS aarch64 发布包](https://github.com/Qiaofanxing/agcavc_104_test/releases/download/v0.1.0/agcavc104test-0.1.0-macos-aarch64.tar.gz)
 
 使用发布包不需要安装 Rust。解压后应保留以下结构：
 
@@ -30,7 +29,9 @@ agcavc104test-0.1.0-windows-x86_64/
     └── dispatch-points.toml
 ```
 
-不要只复制 `agcavc104test.exe`。程序运行时必须能够从当前工作目录读取 `config` 目录。
+macOS 发布包中的目录结构相同，但根目录名为 `agcavc104test-0.1.0-macos-aarch64`，可执行文件名为 `agcavc104test`。
+
+不要只复制可执行文件。程序运行时必须能够从当前工作目录读取 `config` 目录。
 
 ### 1.2 从源码运行
 
@@ -60,7 +61,19 @@ cargo --version
 
 建议从 PowerShell 或 Windows Terminal 启动，不要直接双击 EXE。这样既能保证工作目录正确，也便于查看启动失败信息。
 
-### 2.2 从源码启动
+### 2.2 macOS 发布包
+
+在终端中解压并进入发布包目录：
+
+```bash
+tar -xzf agcavc104test-0.1.0-macos-aarch64.tar.gz
+cd agcavc104test-0.1.0-macos-aarch64
+./agcavc104test
+```
+
+当前 macOS 发布包未使用 Apple Developer ID 签名。如果系统阻止首次运行，请在“系统设置 → 隐私与安全性”中确认允许后再次启动。
+
+### 2.3 从源码启动
 
 在项目根目录执行：
 
@@ -82,7 +95,7 @@ cargo run -- --host 127.0.0.1
 cargo run -- master
 ```
 
-### 2.3 构建本机发布版本
+### 2.4 构建本机发布版本
 
 ```bash
 cargo build --release --locked
